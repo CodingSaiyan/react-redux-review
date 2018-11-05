@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.props.list.map(element => <p>{element}</p>)}
+        {this.props.list.map((element, index) => <p key={index}>{element}</p>)}
         <AddItem/>
       </div>
     );

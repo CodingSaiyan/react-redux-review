@@ -29,7 +29,7 @@ export default function reducer(state = initialState, action) {
     }
 }
 
-//These are our action creator functions. We use these return an action when invoked that has the type and payload property our reducer is switching on
+//These are our action creator functions. We use these to return an action when invoked that has the type and payload property our reducer is switching on
 export function addItem(item) {
     return {
         type: ADD_ITEM,
